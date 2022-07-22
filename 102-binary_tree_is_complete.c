@@ -8,7 +8,7 @@ link_t *new_node(binary_tree_t *node)
 {
 	link_t *new;
 	/*
-	 * @ptr to link_t new structure.
+	 * @new: ptr to link_t new.
 	 */
 	new =  malloc(sizeof(link_t));
 	if (new == NULL)
@@ -22,13 +22,12 @@ link_t *new_node(binary_tree_t *node)
 /**
  * free_q - Function that free the nodes at the linked list.
  * @head: Node of the linked_list.
- * Return: void.
  */
 void free_q(link_t *head)
 {
 	link_t *temp_node;
 	/*
-	 * @temp_node: ptr to link_t temp node.
+	 * @temp_node: ptr to link_t tmp.
 	 */
 	while (head)
 	{
@@ -42,13 +41,12 @@ void free_q(link_t *head)
  * @node: Type pointer of node of the tree.
  * @head: Type head node of in the stack.
  * @tail: Type tail node of in the stack.
- * Return: void.
  */
 void _push(binary_tree_t *node, link_t *head, link_t **tail)
 {
 	link_t *new;
 	/*
-	 * @new: ptr to link_t var.
+	 * @new: ptr to link_t new.
 	 */
 	new = new_node(node);
 	if (new == NULL)
@@ -62,13 +60,12 @@ void _push(binary_tree_t *node, link_t *head, link_t **tail)
 /**
  * _pop - Function that pops a node into the stack.
  * @head: Type head node of in the stack.
- * Return: void.
  */
 void _pop(link_t **head)
 {
 	link_t *temp_node;
 	/*
-	 * @temp_node: ptr to link_t.
+	 * @temp_node: ptr to link_t temp.
 	 */
 	temp_node = (*head)->next;
 	free(*head);
@@ -83,11 +80,7 @@ int binary_tree_is_complete(const binary_tree_t *tree)
 {
 	link_t *head, *tail;
 	int flag = 0;
-	/*
-	 * @head: ptr to link_t.
-	 * @tail: ptr to link_t.
-	 * @flag: dummy var.
-	 */
+
 	if (tree == NULL)
 	{
 		return (0);

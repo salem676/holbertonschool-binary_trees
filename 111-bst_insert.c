@@ -9,11 +9,7 @@ bst_t *bst_insert(bst_t **tree, int value)
 {
 	bst_t *new, *temp;
 	binary_tree_t *aux;
-	/*
-	 * @new: ptr to new.
-	 * @temp: ptr to temp.
-	 * @binary_tree_t: ptr to aux.
-	 */
+
 	if (tree == NULL)
 		return (NULL);
 	if (*tree == NULL)
