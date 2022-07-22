@@ -11,7 +11,7 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
 	binary_tree_t *p, *q;
 	/*
 	 * @p: ptr to binary_tree_t var.
-	 * @q: ptr to binary_tree_t var. 
+	 * @q: ptr to binary_tree_t var.
 	 */
 	if (first == NULL || second == NULL)
 	{
